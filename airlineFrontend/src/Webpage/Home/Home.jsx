@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"
-import FlightSearch from "../../common/FlightSearch/FlightSearch";
+import { Outlet } from "react-router-dom";
 
 export default function Home(){
     return(
@@ -27,7 +27,7 @@ export default function Home(){
             </div>
 
             <div className="mt-5 border rounded m-5 py-3">
-                <FlightSearch/>
+                <Outlet/>
             </div>
 
         </>
